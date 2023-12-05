@@ -82,6 +82,7 @@
 
 // - створити функцію яка приймає масив примітивних елементів (числа,стрінги,булеві), та будує для них список
 
+<<<<<<< HEAD
 function foobar(item) {
   for (const itemElement of item) {
     document.write(`<li>${itemElement}</li>`)
@@ -89,6 +90,17 @@ function foobar(item) {
 }
 
 foobar([11,2,4,6,7,7,6])
+=======
+// function foobar(item) {
+//   document.write(`<ol>`)
+//   for (const itemElement of item) {
+//     document.write(`<li>${itemElement}</li>`)
+//   }
+//   document.write(`</ol>`)
+// }
+//
+// foobar([11,2,true,6,7,'jfng',6])
+>>>>>>> origin/master
 
 // - створити функцію яка приймає масив об'єктів з наступними полями id,name,age , та виводить їх в документ. Для кожного об'єкту окремий блок.
 
