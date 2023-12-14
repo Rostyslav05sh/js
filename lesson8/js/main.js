@@ -224,32 +224,17 @@
 // }
 // let i = 35
 // let newPrince = new Prince(23, 'Prince', `${i}`)
-//   let Prince1 = newPrince.shoeHeFound
 // function find1() {
-//   let res
 //   for (const arrElement of arr) {
-//     let Cinderella = arr.footSize
-//     if (Cinderella === Prince1) {
-//       res = Cinderella
-//       console.log(res)
+//     if (arrElement.footSize === newPrince.shoeHeFound) {
+//       console.log(arrElement)
 //     }
 //   }
 // }
 //
 // find1()
-// console.log(arr[3].footSize === newPrince.shoeHeFound)
-// // я не розумію що тут не так чому не виводить обʼєкт масиву якщо він true, я вже всяку фігню перепробував не виходить
 //
-// let find = arr.find(function (value) {
-//   value.footSize === newPrince.shoeHeFound
-// })
+// let find = arr.find((value) => value.footSize === newPrince.shoeHeFound)
 //
 // console.log(find)
-// наскільки я розумію в мене не виходить через цю частину коду де цикл
-//for (let i = 32; i < 42; i++){
-// let newCinderella = new Cinderella (`Cinderella${i}`, 19, `${i}`)
-// for (let i = 0; i<1; i++) {
-//   arr.push(newCinderella)
-//   }
-// }
-// але як тоді зробити циклом щоб сто раз не прописувати це все щось я не можу розіброатись(
+
