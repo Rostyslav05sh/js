@@ -14,6 +14,7 @@ fetch(url2).then(value => value.json())
       let p = document.createElement('p')
       p.innerText = user
       console.log(p)
+      //Чому воно не ітерується я щось не можу зрозуміти(
     }
 
   })
