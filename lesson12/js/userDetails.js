@@ -4,6 +4,43 @@ console.log(xxx)
 let url2 = 'http://jsonplaceholder.typicode.com/users/' + JSON.parse(xxx)
 console.log(url2)
 
+fetch(url2).then(value => value.json())
+  .then(users => {
+    let h1 = document.getElementsByTagName('h1')[0];
+    h1.innerText = users.name
+      Object.values(users).forEach(prop => {
+        if (prop === users.address || prop === users.company) {
+            Object.values(prop).forEach(pr=> {
+                if (pr === users.address.geo) {
+                    Object.values(pr).forEach(r=> {
+                        console.log(r)
+                        let p = document.createElement('p')
+                                    p.innerText = r
+                                    document.body.append(p)
+                    })
+                } else {
+                let p = document.createElement('p')
+                p.innerText = pr
+                document.body.append(p)
+                }
+            })
+        } else {
+            let p = document.createElement('p')
+            p.innerText = prop
+            document.body.append(p)
+        }
+      })
+
+  })
+
+
+
+
+
+
+
+
+
 
 
 // fetch(url2).then(value => value.json())
@@ -66,35 +103,6 @@ console.log(url2)
 //
 //   })
 
-
-fetch(url2).then(value => value.json())
-  .then(users => {
-    let h1 = document.getElementsByTagName('h1')[0];
-    h1.innerText = users.name
-      Object.values(users).forEach(prop => {
-        if (prop === users.address || prop === users.company) {
-            Object.values(prop).forEach(pr=> {
-                if (pr === users.address.geo) {
-                    Object.values(pr).forEach(r=> {
-                        console.log(r)
-                        let p = document.createElement('p')
-                                    p.innerText = r
-                                    document.body.append(p)
-                    })
-                } else {
-                let p = document.createElement('p')
-                p.innerText = pr
-                document.body.append(p)
-                }
-            })
-        } else {
-            let p = document.createElement('p')
-            p.innerText = prop
-            document.body.append(p)
-        }
-      })
-
-  })
 
 
 
